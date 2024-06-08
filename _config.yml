@@ -23,10 +23,10 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://nsandau.github.io"
 
 github:
-  username: github_username # change to your github username
+  username: nsandau # change to your github username
 
 twitter:
   username: twitter_username # change to your twitter username
@@ -93,8 +93,7 @@ theme_mode: # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-# Added own domain to use as cdn to allow medium to pull in images
-cdn: https://nsandau.github.io/ 
+cdn: 
 
 # the avatar on sidebar, support local or CORS resources
 avatar:
