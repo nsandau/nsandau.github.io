@@ -1,0 +1,23 @@
+name: Medium new 
+
+on:
+  workflow_dispatch:
+    inputs:
+      file:
+        description: 'Markdown file to publish'
+        required: true
+        type: string
+        default: './_posts/'
+
+jobs:
+  post-to-medium:
+    name: Post to Medium
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Out Source
+        uses: actions/checkout@v3
+
+      - uses: infraway/medium-post-markdown@v1.6.0
+        with:
+          access_token: ${{ secrets.MEDIUM_INTEGRATION_TOKEN }}
+          markdown_file: "${{ inputs.file }}"
