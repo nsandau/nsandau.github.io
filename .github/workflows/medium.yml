@@ -7,7 +7,7 @@ on:
         description: 'Markdown file to publish'
         required: true
         type: string
-        default: 'content/blog/hello-world/index.md'
+        default: '_posts/'
 
 jobs:
   post-to-medium:
